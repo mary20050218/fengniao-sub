@@ -1,0 +1,631 @@
+# 蜂鸟订阅 Clash/Mihomo 配置 (由 build-subscription.py 生成)
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+proxies:
+  - name: '香港SS01'
+    type: ss
+    server: 114.94.203.80
+    port: 760
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '香港SS02'
+    type: ss
+    server: 114.94.203.80
+    port: 808
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '香港SS03'
+    type: ss
+    server: 114.94.203.80
+    port: 804
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '香港SS05'
+    type: ss
+    server: 114.94.203.80
+    port: 804
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '香港SS06'
+    type: ss
+    server: 114.94.203.80
+    port: 14564
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '香港SS08'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40158
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'debuild.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '香港SS09'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40159
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'dput.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '香港SS10'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40160
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'dupload.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '日本SS02'
+    type: ss
+    server: 114.94.203.80
+    port: 487
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '日本SS03'
+    type: ss
+    server: 114.94.203.80
+    port: 488
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '日本SS04'
+    type: ss
+    server: 114.94.203.80
+    port: 497
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '日本SS05'
+    type: ss
+    server: 114.94.203.80
+    port: 14005
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '日本SS06'
+    type: ss
+    server: 114.94.203.80
+    port: 497
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '日本SS07'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40140
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'squeeze.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '日本SS08'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40141
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'wheezy.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '日本SS09'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40142
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'forky.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '日本SS10'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40143
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'duke.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '台湾01'
+    type: ss
+    server: 114.94.203.80
+    port: 20005
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '台湾02'
+    type: ss
+    server: 114.94.203.80
+    port: 20009
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '台湾03'
+    type: ss
+    server: 114.94.203.80
+    port: 20005
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '台湾04'
+    type: ss
+    server: 114.94.203.80
+    port: 20009
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '台湾05'
+    type: ss
+    server: 114.94.203.80
+    port: 20005
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '台湾06'
+    type: ss
+    server: 114.94.203.80
+    port: 20005
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '台湾07'
+    type: ss
+    server: 114.94.203.80
+    port: 20009
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '台湾08'
+    type: ss
+    server: 114.94.203.80
+    port: 20005
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '台湾09'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40155
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'devscripts.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '台湾10'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40156
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'debhelper.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '新加坡01'
+    type: ss
+    server: 114.94.203.80
+    port: 20000
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '新加坡02'
+    type: ss
+    server: 114.94.203.80
+    port: 20004
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '新加坡03'
+    type: ss
+    server: 114.94.203.80
+    port: 20080
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '新加坡04'
+    type: ss
+    server: 114.94.203.80
+    port: 20084
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '新加坡05'
+    type: ss
+    server: 114.94.203.80
+    port: 20080
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '新加坡06'
+    type: ss
+    server: 114.94.203.80
+    port: 20080
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '新加坡07'
+    type: ss
+    server: 114.94.203.80
+    port: 20084
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '新加坡08'
+    type: ss
+    server: 114.94.203.80
+    port: 20080
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '新加坡09'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40132
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'rex.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '新加坡10'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40132
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'rex.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '美国01'
+    type: ss
+    server: 114.94.203.80
+    port: 20010
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '美国02'
+    type: ss
+    server: 114.94.203.80
+    port: 20014
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '美国03'
+    type: ss
+    server: 114.94.203.80
+    port: 20010
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '美国04'
+    type: ss
+    server: 114.94.203.80
+    port: 20019
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '美国05'
+    type: ss
+    server: 114.94.203.80
+    port: 20010
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '美国06'
+    type: ss
+    server: 114.94.203.80
+    port: 20010
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '美国07'
+    type: ss
+    server: 114.94.203.80
+    port: 20019
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '美国08'
+    type: ss
+    server: 114.94.203.80
+    port: 20010
+    cipher: aes-256-gcm
+    password: '93d592c5-ad24-3103-9853-eb0f53729530'
+    udp: true
+  - name: '美国09'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40146
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'debconf.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '美国10'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40146
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'debconf.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '澳门01'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40166
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'nala.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '澳门02'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40166
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    sni: 'nala.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '澳门03'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40166
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'nala.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '澳门04'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40166
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    sni: 'nala.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '澳门05'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40166
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'nala.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '韩国01'
+    type: ss
+    server: 114.94.203.80
+    port: 20044
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '德国01'
+    type: ss
+    server: 114.94.203.80
+    port: 20054
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '印度01'
+    type: ss
+    server: 114.94.203.80
+    port: 20049
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '澳大利亚01'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40179
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'cruft.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '法国01'
+    type: ss
+    server: 114.94.203.80
+    port: 20069
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '英国01'
+    type: ss
+    server: 114.94.203.80
+    port: 20024
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '俄罗斯01'
+    type: ss
+    server: 114.94.203.80
+    port: 20034
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '阿根廷01'
+    type: ss
+    server: 114.94.203.80
+    port: 20029
+    cipher: aes-256-gcm
+    password: '1baf65db-9c25-3780-8a76-2c40d5f004bb'
+    udp: true
+  - name: '越南01'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40174
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'cdbs.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '菲律宾01'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40173
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'dpatch.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '马来西亚01'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40167
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'equivs.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '巴基斯坦01'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40178
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'debsums.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+  - name: '迪拜01'
+    type: hysteria2
+    server: 130196tw.deepseek16.com
+    port: 40181
+    password: '13d04bf9-56d9-4dd8-ac9b-fe29939bb133'
+    sni: 'deborphan.ubuntu26.com'
+    skip-cert-verify: true
+    udp: true
+
+proxy-groups:
+  - name: 蜂鸟-手动
+    type: select
+    proxies:
+      - '香港SS01'
+      - '香港SS02'
+      - '香港SS03'
+      - '香港SS05'
+      - '香港SS06'
+      - '香港SS08'
+      - '香港SS09'
+      - '香港SS10'
+      - '日本SS02'
+      - '日本SS03'
+      - '日本SS04'
+      - '日本SS05'
+      - '日本SS06'
+      - '日本SS07'
+      - '日本SS08'
+      - '日本SS09'
+      - '日本SS10'
+      - '台湾01'
+      - '台湾02'
+      - '台湾03'
+      - '台湾04'
+      - '台湾05'
+      - '台湾06'
+      - '台湾07'
+      - '台湾08'
+      - '台湾09'
+      - '台湾10'
+      - '新加坡01'
+      - '新加坡02'
+      - '新加坡03'
+      - '新加坡04'
+      - '新加坡05'
+      - '新加坡06'
+      - '新加坡07'
+      - '新加坡08'
+      - '新加坡09'
+      - '新加坡10'
+      - '美国01'
+      - '美国02'
+      - '美国03'
+      - '美国04'
+      - '美国05'
+      - '美国06'
+      - '美国07'
+      - '美国08'
+      - '美国09'
+      - '美国10'
+      - '澳门01'
+      - '澳门02'
+      - '澳门03'
+      - '澳门04'
+      - '澳门05'
+      - '韩国01'
+      - '德国01'
+      - '印度01'
+      - '澳大利亚01'
+      - '法国01'
+      - '英国01'
+      - '俄罗斯01'
+      - '阿根廷01'
+      - '越南01'
+      - '菲律宾01'
+      - '马来西亚01'
+      - '巴基斯坦01'
+      - '迪拜01'
+  - name: 蜂鸟-自动
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - '香港SS01'
+      - '香港SS02'
+      - '香港SS03'
+      - '香港SS05'
+      - '香港SS06'
+      - '香港SS08'
+      - '香港SS09'
+      - '香港SS10'
+      - '日本SS02'
+      - '日本SS03'
+      - '日本SS04'
+      - '日本SS05'
+      - '日本SS06'
+      - '日本SS07'
+      - '日本SS08'
+      - '日本SS09'
+      - '日本SS10'
+      - '台湾01'
+      - '台湾02'
+      - '台湾03'
+      - '台湾04'
+      - '台湾05'
+      - '台湾06'
+      - '台湾07'
+      - '台湾08'
+      - '台湾09'
+      - '台湾10'
+      - '新加坡01'
+      - '新加坡02'
+      - '新加坡03'
+      - '新加坡04'
+      - '新加坡05'
+      - '新加坡06'
+      - '新加坡07'
+      - '新加坡08'
+      - '新加坡09'
+      - '新加坡10'
+      - '美国01'
+      - '美国02'
+      - '美国03'
+      - '美国04'
+      - '美国05'
+      - '美国06'
+      - '美国07'
+      - '美国08'
+      - '美国09'
+      - '美国10'
+      - '澳门01'
+      - '澳门02'
+      - '澳门03'
+      - '澳门04'
+      - '澳门05'
+      - '韩国01'
+      - '德国01'
+      - '印度01'
+      - '澳大利亚01'
+      - '法国01'
+      - '英国01'
+      - '俄罗斯01'
+      - '阿根廷01'
+      - '越南01'
+      - '菲律宾01'
+      - '马来西亚01'
+      - '巴基斯坦01'
+      - '迪拜01'
+
+rules:
+  - MATCH,蜂鸟-手动
